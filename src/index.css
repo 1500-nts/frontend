@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  /* Ink navy — sidebar, headers, primary text */
+  --color-ink-950: #0a0f1c;
+  --color-ink-900: #0f1729;
+  --color-ink-800: #16213a;
+  --color-ink-700: #202d4a;
+  --color-ink-600: #33405f;
+
+  /* Warm paper — content canvas */
+  --color-paper-50: #f7f6f2;
+  --color-paper-100: #f1efe8;
+  --color-paper-200: #e5e1d4;
+
+  /* Brass — the one accent, used with restraint */
+  --color-brass-400: #cda05a;
+  --color-brass-500: #b8873a;
+  --color-brass-600: #96692a;
+
+  /* Status */
+  --color-emerald-600: #1f7a54;
+  --color-emerald-50: #e9f5ef;
+  --color-amber-600: #b07a12;
+  --color-amber-50: #faf1de;
+  --color-red-600: #b3261e;
+  --color-red-50: #fbeae9;
+  --color-slate-500: #6b7280;
+  --color-slate-600: #4b5361;
+
+  --font-display: "Fraunces", "Iowan Old Style", ui-serif, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+  }
+  body {
+    background-color: var(--color-paper-50);
+    color: var(--color-ink-900);
+  }
+  ::selection {
+    background-color: var(--color-brass-400);
+    color: var(--color-ink-950);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brass-500);
+    outline-offset: 2px;
+  }
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@layer components {
+  .stamp {
+    font-family: var(--font-mono);
+    letter-spacing: 0.04em;
+  }
+}
