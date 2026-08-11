@@ -6,8 +6,8 @@ customer-facing sign-up; account holders only exist as records an admin
 manages.
 
 **Live demo:**
-- Frontend: **https://auth-app-ts.netlify.app**
-- Backend: **https://auth-application-springboot.onrender.com**
+- Frontend: **https://nts1500bank.netlify.app/**
+- Backend: **https://api-gateway-service-erz3.onrender.com/**
 
 ## What changed vs. a normal "user-facing" bank frontend
 
