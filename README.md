@@ -5,6 +5,10 @@ backend. Every screen in this app is for **bank staff** — there is no
 customer-facing sign-up; account holders only exist as records an admin
 manages.
 
+**Live demo:**
+- Frontend: **https://auth-app-ts.netlify.app**
+- Backend: **https://auth-application-springboot.onrender.com**
+
 ## What changed vs. a normal "user-facing" bank frontend
 
 Per the brief, this console is built around these rules:
